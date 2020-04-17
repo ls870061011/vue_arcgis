@@ -1,5 +1,5 @@
+*.js linguist-language=Vue
+
 * text=auto eol=lf
 package-lock.json -diff
 yarn.lock -diff
-
-*.js linguist-language=Vue
