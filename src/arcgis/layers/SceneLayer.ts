@@ -10,7 +10,7 @@ import Config from '../Config';
  *
  * @api
  */
-class SceneLayer extends Config.constructors.SceneLayer {
+class SceneLayer {
   /**
    *
    * @param {Object} options
@@ -18,8 +18,8 @@ class SceneLayer extends Config.constructors.SceneLayer {
    * @constructor
    * @alias SceneLayer
    */
-  constructor(options: object) {
-    super(options);
+  constructor(options: any) {
+    Object.setPrototypeOf(this, new Config.constructors.SceneLayer(options));
   }
 }
 

@@ -10,7 +10,7 @@ import Config from './Config';
  *
  * @api
  */
-class Map extends Config.constructors.Map {
+class Map {
   /**
    *
    * @param {Object} options
@@ -18,9 +18,10 @@ class Map extends Config.constructors.Map {
    * @constructor
    * @alias Map
    */
-  constructor(options: object) {
-    super(options);
+  constructor(options: any) {
+    // super(options);
+    // Object.setPrototypeOf(Map.prototype, new Config.constructors.Map(options));
+    Object.setPrototypeOf(this, new Config.constructors.Map(options));
   }
 }
-
 export default Map;

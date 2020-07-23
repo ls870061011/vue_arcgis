@@ -10,7 +10,7 @@ import Config from './Config';
  *
  * @api
  */
-class SceneView extends Config.constructors.SceneView {
+class SceneView {
   /**
    *
    * @param {Object} options
@@ -18,8 +18,8 @@ class SceneView extends Config.constructors.SceneView {
    * @constructor
    * @alias SceneView
    */
-  constructor(options: object) {
-    super(options);
+  constructor(options: any) {
+    Object.setPrototypeOf(this, new Config.constructors.SceneView(options));
   }
 }
 

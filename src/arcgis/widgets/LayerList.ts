@@ -10,7 +10,7 @@ import Config from '../Config';
  *
  * @api
  */
-class LayerList extends Config.constructors.LayerList {
+class LayerList {
   /**
    *
    * @param {Object} options
@@ -18,8 +18,8 @@ class LayerList extends Config.constructors.LayerList {
    * @constructor
    * @alias LayerList
    */
-  constructor(options: object) {
-    super(options);
+  constructor(options: any) {
+    Object.setPrototypeOf(this, new Config.constructors.LayerList(options));
   }
 }
 

@@ -1,10 +1,18 @@
-html,
+// 公共样式引用
+html {
+  height: 100%;
+}
+
 body {
+  border: 0px;
   color: $color_default;
   font-family: sans-serif, 'Microsoft Yahei,微软雅黑';
   font-size: 12px;
   height: 100%;
   margin: 0;
+  overflow-x: auto;
+  overflow-y: auto; // overflow: hidden; // overflow-y: auto;
+  padding-bottom: 0px;
 }
 
 #app {
@@ -19,6 +27,7 @@ body {
 
 .curP {
   cursor: pointer;
+  z-index: 1000;
 }
 
 //上下左右居中 fixed

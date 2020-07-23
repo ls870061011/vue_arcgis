@@ -1,17 +1,17 @@
 <template>
   <div class="main-container">
-    <SceneView msg="Welcome to this map" />
+    <SceneViewer msg="Welcome to this map" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import SceneView from '@/components/SceneView.vue';
+import SceneViewer from '@/components/SceneViewer.vue';
 
 @Component({
   name: 'Home',
   components: {
-    SceneView,
+    SceneViewer,
   },
 })
 export default class Home extends Vue {}
