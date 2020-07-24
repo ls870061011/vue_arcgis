@@ -55,13 +55,13 @@ module.exports = {
     // });
 
     // 开发环境下，保存时通过eslint自动格式化
-    config.module
-      .rule('eslint')
-      .use('eslint-loader')
-      .loader('eslint-loader')
-      .tap((options) => {
-        options.fix = true;
-        return options;
-      });
+    // config.module
+    //   .rule('eslint')
+    //   .use('eslint-loader')
+    //   .loader('eslint-loader')
+    //   .tap((options) => {
+    //     options.fix = true;
+    //     return options;
+    //   });
   },
 };
