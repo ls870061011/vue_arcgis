@@ -19,7 +19,7 @@ class SceneLayer {
    * @alias SceneLayer
    */
   constructor(options: any) {
-    Object.setPrototypeOf(this, new Config.constructors.SceneLayer(options));
+    Object.setPrototypeOf(this, new Config.modules.SceneLayer(options));
   }
 }
 

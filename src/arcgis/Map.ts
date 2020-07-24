@@ -20,8 +20,8 @@ class Map {
    */
   constructor(options: any) {
     // super(options);
-    // Object.setPrototypeOf(Map.prototype, new Config.constructors.Map(options));
-    Object.setPrototypeOf(this, new Config.constructors.Map(options));
+    // Object.setPrototypeOf(Map.prototype, new Config.modules.Map(options));
+    Object.setPrototypeOf(this, new Config.modules.Map(options));
   }
 }
 export default Map;

@@ -19,7 +19,7 @@ class SceneView {
    * @alias SceneView
    */
   constructor(options: any) {
-    Object.setPrototypeOf(this, new Config.constructors.SceneView(options));
+    Object.setPrototypeOf(this, new Config.modules.SceneView(options));
   }
 }
 

@@ -9,7 +9,7 @@ class Config {
   //   initModule(options.url);
   // }
 
-  static constructors: { [key: string]: any } = {}; // gis构造函数
+  static modules: { [key: string]: any } = {}; // 用到的ArcGIS模块类
 
   static async initModule(url: string) {
     const options = {
@@ -19,7 +19,7 @@ class Config {
     const modules = ['esri/Map', 'esri/views/SceneView', 'esri/layers/SceneLayer', 'esri/widgets/LayerList'];
     try {
       const args = await loadModules(modules, options);
-      const gisConstructor = Config.constructors;
+      const gisConstructor = Config.modules;
       Object.keys(args).forEach((key: string) => {
         const name: string = modules[Number(key)].split('/').pop() || '';
         gisConstructor[name] = args[Number(key)];
@@ -28,7 +28,7 @@ class Config {
       //   const name: string = modules[key].split('/').pop() || '';
       //   gisConstructor[name] = args[key];
       // }
-      Config.constructors = gisConstructor;
+      Config.modules = gisConstructor;
     } catch (err) {
       // console.error(err);
     }

@@ -19,7 +19,7 @@ class LayerList {
    * @alias LayerList
    */
   constructor(options: any) {
-    Object.setPrototypeOf(this, new Config.constructors.LayerList(options));
+    Object.setPrototypeOf(this, new Config.modules.LayerList(options));
   }
 }
 
