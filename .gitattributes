@@ -1,9 +1,3 @@
 * text=auto eol=lf
 package-lock.json -diff
 yarn.lock -diff
-
-*.js linguist-language=vue
-*.ts linguist-language=vue
-*.css linguist-language=vue
-*.scss linguist-language=vue
-*.html linguist-language=vue

@@ -47,21 +47,5 @@ module.exports = {
 
     // 移除prefetch插件
     config.plugins.delete('prefetch');
-
-    // 程序入口
-    // config.plugin('html').tap((args) => {
-    //   args[0].template = process.env.template;
-    //   return args;
-    // });
-
-    // 开发环境下，保存时通过eslint自动格式化
-    // config.module
-    //   .rule('eslint')
-    //   .use('eslint-loader')
-    //   .loader('eslint-loader')
-    //   .tap((options) => {
-    //     options.fix = true;
-    //     return options;
-    //   });
   },
 };
